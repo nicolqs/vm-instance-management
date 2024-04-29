@@ -3,13 +3,13 @@ import TableOne from "@/components/Tables/TableOne";
 import TableThree from "@/components/Tables/TableThree";
 import TableTwo from "@/components/Tables/TableTwo";
 
-import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Next.js Tables | TailAdmin - Next.js Dashboard Template",
+  title: "VM Instance Management Dashboard",
   description:
-    "This is Next.js Tables page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "VM Instance Viewer: Post-deployment, users can manage the VM's lifecycle (start, stop, restart), visualize time-series data, and edit source files stored in an S3-like service.",
 };
 
 const TablesPage = () => {

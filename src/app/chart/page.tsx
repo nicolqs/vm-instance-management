@@ -1,12 +1,12 @@
 import Chart from "@/components/Charts/page";
-import { Metadata } from "next";
 import DefaultLayout from "@/components/Layouts/DefaultLayout";
+import { Metadata } from "next";
 import React from "react";
 
 export const metadata: Metadata = {
-  title: "Next.js Chart | TailAdmin - Next.js Dashboard Template",
+  title: "VM Instance Management Dashboard",
   description:
-    "This is Next.js Chart page for TailAdmin - Next.js Tailwind CSS Admin Dashboard Template",
+    "VM Instance Viewer: Post-deployment, users can manage the VM's lifecycle (start, stop, restart), visualize time-series data, and edit source files stored in an S3-like service.",
 };
 
 const BasicChartPage: React.FC = () => {
