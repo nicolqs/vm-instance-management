@@ -1,9 +1,13 @@
+"use client";
+import { EthereumWalletConnectors } from "@dynamic-labs/ethereum";
+import {
+  DynamicContextProvider,
+  DynamicWidget,
+} from "@dynamic-labs/sdk-react-core";
+import Image from "next/image";
 import Link from "next/link";
 import DarkModeSwitcher from "./DarkModeSwitcher";
-import DropdownMessage from "./DropdownMessage";
 import DropdownNotification from "./DropdownNotification";
-import DropdownUser from "./DropdownUser";
-import Image from "next/image";
 
 const Header = (props: {
   sidebarOpen: string | boolean | undefined;
@@ -96,7 +100,7 @@ const Header = (props: {
               <input
                 type="text"
                 placeholder="Type to search..."
-                className="w-full bg-transparent pl-9 pr-4 font-medium focus:outline-none xl:w-125"
+                className="max-w-80 bg-transparent pl-9 pr-4 font-medium focus:outline-none xl:w-125"
               />
             </div>
           </form>
@@ -111,14 +115,17 @@ const Header = (props: {
             {/* <!-- Notification Menu Area --> */}
             <DropdownNotification />
             {/* <!-- Notification Menu Area --> */}
-
-            {/* <!-- Chat Notification Area --> */}
-            <DropdownMessage />
-            {/* <!-- Chat Notification Area --> */}
           </ul>
 
           {/* <!-- User Area --> */}
-          <DropdownUser />
+          <DynamicContextProvider
+            settings={{
+              environmentId: "966c26cf-0f6e-409b-a8b1-2b41615b378f",
+              walletConnectors: [EthereumWalletConnectors],
+            }}
+          >
+            <DynamicWidget />
+          </DynamicContextProvider>
           {/* <!-- User Area --> */}
         </div>
       </div>

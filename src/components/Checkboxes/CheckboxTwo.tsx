@@ -1,6 +1,10 @@
 import { useState } from "react";
 
-const CheckboxTwo = () => {
+interface checkboxLabelTwoProps {
+  text: string;
+}
+
+const CheckboxTwo = ({ text }: checkboxLabelTwoProps) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
@@ -41,7 +45,7 @@ const CheckboxTwo = () => {
             </span>
           </div>
         </div>
-        Checkbox Text
+        {text}
       </label>
     </div>
   );
