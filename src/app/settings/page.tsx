@@ -64,8 +64,8 @@ const Settings = () => {
                           type="text"
                           name="fullName"
                           id="fullName"
-                          placeholder="Devid Jhon"
-                          defaultValue="Devid Jhon"
+                          placeholder="Odysseas Eth"
+                          defaultValue="Odysseas Eth"
                         />
                       </div>
                     </div>
@@ -126,8 +126,8 @@ const Settings = () => {
                         type="email"
                         name="emailAddress"
                         id="emailAddress"
-                        placeholder="devidjond45@gmail.com"
-                        defaultValue="devidjond45@gmail.com"
+                        placeholder="Odysseas.eth@gmail.com"
+                        defaultValue="Odysseas.eth@gmail.com"
                       />
                     </div>
                   </div>
@@ -144,8 +144,8 @@ const Settings = () => {
                       type="text"
                       name="Username"
                       id="Username"
-                      placeholder="devidjhon24"
-                      defaultValue="devidjhon24"
+                      placeholder="odyseas"
+                      defaultValue="odyseas"
                     />
                   </div>
 
@@ -229,7 +229,8 @@ const Settings = () => {
                   <div className="mb-4 flex items-center gap-3">
                     <div className="h-14 w-14 rounded-full">
                       <Image
-                        src={"/images/user/user-03.png"}
+                        className="rounded-full"
+                        src={"/images/user/odyseas.png"}
                         width={55}
                         height={55}
                         alt="User"

@@ -151,11 +151,11 @@ const ECommerce: React.FC = () => {
                     </span>
                     {instance.state}
                   </div>
-                  <div className="">{instance.type}</div>
-                  <div className="">{instance.alarm}</div>
-                  <div className="">{instance.zone}</div>
-                  <div className="">{instance.publicIp}</div>
-                  <div className="">{instance.monitoring}</div>
+                  <div>{instance.type}</div>
+                  <div>{instance.alarm}</div>
+                  <div>{instance.zone}</div>
+                  <div>{instance.publicIp}</div>
+                  <div>{instance.monitoring}</div>
                 </div>
               );
             })}
@@ -166,7 +166,6 @@ const ECommerce: React.FC = () => {
       <div className="mt-4 grid grid-cols-12 gap-4 md:mt-6 md:gap-6 2xl:mt-7.5 2xl:gap-7.5">
         <ChartOne />
         <ChartThree />
-        {/* <MapOne /> */}
       </div>
     </>
   );
