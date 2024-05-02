@@ -41,8 +41,9 @@ const SignUp: React.FC = () => {
                   />
                 </Link>
                 <p className="2xl:px-20">
-                  The word "Phylax" is pronounced as "Fy-laks" It's derived from
-                  ancient Greek (φῠ́λᾰξ) , where it means “Guardian”
+                  The word &quot;Phylax&quot; is pronounced as
+                  &quot;Fy-laks&quot; It&apos;s derived from ancient Greek
+                  meaning &quot;Guardian&quot;
                 </p>
 
                 <span className="mt-15 inline-block">

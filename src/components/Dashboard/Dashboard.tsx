@@ -135,7 +135,10 @@ const ECommerce: React.FC = () => {
               const statusColor =
                 instance.state === "Running" ? "bg-green-400" : "bg-rose-800";
               return (
-                <div className="grid w-full grid-cols-8 border-b-2 border-b-slate-50 pb-1">
+                <div
+                  className="grid w-full grid-cols-8 border-b-2 border-b-slate-50 pb-1"
+                  key={instance.name}
+                >
                   <div className="font-bold">{instance.name}</div>
                   <div className="">{instance.instanceId}</div>
                   <div className="flex flex-row gap-2">
