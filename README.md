@@ -8,3 +8,9 @@
 - React + Typescript
 - Next.js
 - Tailwind
+
+## Screenshots
+
+![Desktop](./public/images/desktop.png)
+
+![Desktop Dark](./public/images/desktop-dark.png)
