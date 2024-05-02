@@ -6,7 +6,7 @@ interface SelectGroupProps {
   options: string[];
 }
 
-const SelectGroupTwo: React.FC<SelectGroupProps> = ({ text, options }) => {
+const SelectGroup: React.FC<SelectGroupProps> = ({ text, options }) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isOptionSelected, setIsOptionSelected] = useState<boolean>(false);
 
@@ -64,4 +64,4 @@ const SelectGroupTwo: React.FC<SelectGroupProps> = ({ text, options }) => {
   );
 };
 
-export default SelectGroupTwo;
+export default SelectGroup;

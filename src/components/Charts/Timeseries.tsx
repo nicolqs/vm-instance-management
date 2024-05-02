@@ -122,7 +122,7 @@ interface ChartOneState {
   }[];
 }
 
-const ChartOne: React.FC = () => {
+const Timeseries: React.FC = () => {
   const [state, setState] = useState<ChartOneState>({
     series: [
       {
@@ -197,4 +197,4 @@ const ChartOne: React.FC = () => {
   );
 };
 
-export default ChartOne;
+export default Timeseries;

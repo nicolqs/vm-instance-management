@@ -1,5 +1,5 @@
-import CheckboxTwo from "../Checkboxes/CheckboxTwo";
-import SelectGroupTwo from "../SelectGroup/SelectGroupTwo";
+import Checkbox from "../Checkboxes/Checkbox";
+import SelectGroup from "../SelectGroup/index";
 import SwitcherOne from "../Switchers/SwitcherOne";
 
 function InstancePicker() {
@@ -15,7 +15,7 @@ function InstancePicker() {
               >
                 Instance Template
               </label>
-              <SelectGroupTwo
+              <SelectGroup
                 text="Select Instance"
                 options={["Phylax Node v1", "Phylax Node v2", "Phylax Beta"]}
               />
@@ -27,7 +27,7 @@ function InstancePicker() {
               >
                 CPU
               </label>
-              <SelectGroupTwo
+              <SelectGroup
                 text="Select CPU"
                 options={["1 vCPU", "2 vCPU", "4 vCPU", "8 vCPU", "16 vCPU"]}
               />
@@ -39,7 +39,7 @@ function InstancePicker() {
               >
                 RAM
               </label>
-              <SelectGroupTwo
+              <SelectGroup
                 text="Select RAM"
                 options={[
                   "16 GiB Memory",
@@ -59,7 +59,7 @@ function InstancePicker() {
               >
                 RAM
               </label>
-              <SelectGroupTwo
+              <SelectGroup
                 text="Select RAM"
                 options={[
                   "16 GiB Memory",
@@ -92,7 +92,7 @@ function InstancePicker() {
                 Network settings
               </label>
               <div className="pt-2">
-                <CheckboxTwo text="Allow SSH traffic form" />
+                <Checkbox text="Allow SSH traffic form" />
               </div>
             </div>
           </div>

@@ -4,7 +4,7 @@ interface checkboxLabelTwoProps {
   text: string;
 }
 
-const CheckboxTwo = ({ text }: checkboxLabelTwoProps) => {
+const Checkbox = ({ text }: checkboxLabelTwoProps) => {
   const [isChecked, setIsChecked] = useState<boolean>(false);
 
   return (
@@ -51,4 +51,4 @@ const CheckboxTwo = ({ text }: checkboxLabelTwoProps) => {
   );
 };
 
-export default CheckboxTwo;
+export default Checkbox;
